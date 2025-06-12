@@ -4,125 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Productos - Tienda de Ropa</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
+  <link rel="stylesheet" href="estilos.css">
 
-    header {
-      background-color: #222;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    nav {
-      background-color: #444;
-    }
-
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li {
-      margin: 0 1rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      padding: 2rem;
-    }
-
-    section h2 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-
-    /* Aquí empieza el estilo para productos mejorado */
-    .productos-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      max-width: 960px;
-      margin: 0 auto;
-    }
-
-    .producto {
-      background-color: white;
-      border-radius: 10px;
-      padding: 1rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .producto:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    }
-
-    .producto img {
-  max-width: 100%;
-  max-height: 150px;  /* límite de altura */
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  object-fit: contain;
-}
-
-
-    .producto p {
-      font-size: 1.2rem;
-      margin: 0 0 1rem;
-      color: #333;
-      font-weight: 600;
-    }
-
-    .producto button {
-      padding: 0.6rem 1.5rem;
-      background-color: #28a745;
-      border: none;
-      color: white;
-      font-weight: bold;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      align-self: center;
-    }
-
-    .producto button:hover {
-      background-color: #218838;
-    }
-    /* Fin estilo productos mejorado */
-  </style>
 </head>
+
 <body>
   <header>
     <h1>Bienvenido a nuestra tienda de ropa</h1>
@@ -140,18 +25,28 @@
   <main>
     <section>
       <h2>Productos disponibles</h2>
+
+      <!-- Submenú de categorías -->
+      <div class="submenu">
+        <a href="productos.html">Todos</a>
+        <a href="camisetas.html">Camisetas</a>
+        <a href="pantalones.html">Pantalones</a>
+        <a href="buzos.html">Buzos</a>
+        <a href="compras.html">Compras</a>
+      </div>
+
       <p style="text-align: center;">Explora todos los productos que tenemos para ti. ¡Ofertas especiales cada semana!</p>
 
       <div class="productos-grid">
         <div class="producto">
           <img src="imagenes/camiseta.jpg" alt="Camiseta">
           <p>Camiseta de algodón - $20</p>
-          <button>Comprar</button>
+          <a href="compras.html">Comprar</a>
         </div>
         <div class="producto">
           <img src="imagenes/jeans.jpg" alt="Jeans">
           <p>Jeans modernos - $35</p>
-          <button>Comprar</button>
+          <a href="compras.html">Comprar</a>
         </div>
       </div>
     </section>

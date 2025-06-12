@@ -1,0 +1,167 @@
+/* Tipografía base y fondo general */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #f1f3f6;
+  color: #333;
+  line-height: 1.6;
+  background: center;
+  text-align: center;
+}
+
+/* Encabezado */
+header {
+  background: linear-gradient(to right, #28a745, #218838);
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Navegación principal */
+nav {
+  background-color: #333;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0.8rem 0;
+}
+
+nav ul li {
+  margin: 0 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #28a745;
+}
+
+/* Contenido principal */
+main {
+  padding: 2rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Títulos de secciones */
+section h2 {
+  text-align: center;
+  margin: 2rem 0 1.5rem;
+  border-bottom: 2px solid #28a745;
+  display: inline-block;
+  padding-bottom: 0.4rem;
+  color: #218838;
+}
+
+/* Grid de productos */
+.productos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Tarjeta de producto */
+.producto {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.2rem;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.producto:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Imagen del producto */
+.producto img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  height: 180px;
+}
+
+/* Descripción del producto */
+.producto p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.5rem 0 1rem;
+  color: #444;
+}
+
+/* Botón de compra */
+.producto a,
+.producto button {
+  padding: 0.6rem 1.5rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.producto a:hover,
+.producto button:hover {
+  background-color: #218838;
+}
+
+/* Pie de página */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+}
+
+/* Submenú de categorías (si decides agregarlo) */
+.submenu {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem auto 2rem;
+  flex-wrap: wrap;
+}
+
+.submenu a {
+  background-color: #e8f5e9;
+  color: #218838;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.submenu a:hover {
+  background-color: #c8e6c9;
+  color: #1b5e20;
+}
+a
