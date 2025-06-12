@@ -141,4 +141,11 @@ button.comprar:hover {
   .producto-info {
     margin-bottom: 1rem;
   }
+  .detalle-producto img {
+  max-width: 250px;     /* Cambia este valor según el tamaño que desees */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
 }
