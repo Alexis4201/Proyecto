@@ -1,45 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tienda de Ropa - Inicio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: rgba(0,0,0,0.3);
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    }
+
+    nav {
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0.5rem 0;
+    }
+
+    nav ul li {
+      margin: 0 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #c7ffc7;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 1rem;
+    }
+
+    .welcome-container {
+      max-width: 600px;
+      background-color: rgba(0,0,0,0.4);
+      padding: 2rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.5);
+    }
+
+    .welcome-container h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      letter-spacing: 1.5px;
+    }
+
+    .welcome-container p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      line-height: 1.5;
+    }
+
+    .welcome-container a {
+      display: inline-block;
+      background-color: #28a745;
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 2rem;
+      font-size: 1.2rem;
+      border-radius: 6px;
+      box-shadow: 0 5px 10px rgba(0,128,0,0.6);
+      transition: background-color 0.3s ease;
+    }
+
+    .welcome-container a:hover {
+      background-color: #218838;
+      box-shadow: 0 7px 14px rgba(0,100,0,0.8);
+    }
+
+    footer {
+      background-color: rgba(0,0,0,0.3);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.5);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .welcome-container h1 {
+        font-size: 2.2rem;
+      }
+
+      .welcome-container p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a nuestra tienda de ropa</h1>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Catalogo</a></li>
-        </ul>
-    </nav>
+  <header>
+    Tienda de Ropa
+  </header>
 
-    <main>
-        <section>
-            <h2>Nuestros productos</h2>
-            <div class="producto">
-                <img src="camiseta.jpg" alt="Camiseta">
-                <p>Camiseta de algodón - $20</p>
-                <button>Comprar</button>
-            </div>
-            <div class="producto">
-                <img src="jeans.jpg" alt="Jeans">
-                <p>Jeans modernos - $35</p>
-                <button>Comprar</button>
-            </div>
-        </section>
-    </main>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+    </ul>
+  </nav>
 
-    <footer>
-        <p>© 2025 Tienda de Ropa - Todos los derechos reservados</p>
-    </footer>
+  <main>
+    <div class="welcome-container">
+      <h1>Bienvenido a Nuestra Tienda</h1>
+      <p>Descubre las últimas tendencias en ropa para todas las ocasiones. Calidad, estilo y los mejores precios, todo en un solo lugar.</p>
+      <a href="productos.html">Explorar Productos</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Tienda de Ropa - Todos los derechos reservados
+  </footer>
 </body>
 </html>
-
-
