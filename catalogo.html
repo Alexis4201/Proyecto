@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Catálogo - Tienda de Ropa</title>
-    <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="estiloscatalogo.css">
 </head>
 <body>
   <header>
@@ -21,95 +21,118 @@
   </nav>
 
   <main>
+    <!-- Camisetas -->
     <section>
       <h2>Camisetas</h2>
       <div class="productos-grid">
         <div class="producto">
           <img src="imagenes/camiseta.jpg" alt="Camiseta básica">
           <p>Camiseta básica de algodón - $20</p>
-          <button>Ver más</button>
+          <button onclick="verMas(this)">Ver más</button>
+          <div class="descripcion">Algodón 100%, suave y cómoda para uso diario.</div>
         </div>
+
         <div class="producto">
           <img src="imagenes/camiseta-deportiva.jpg" alt="Camiseta deportiva">
           <p>Camiseta deportiva transpirable - $25</p>
-          <button>Ver más</button>
+          <button onclick="verMas(this)">Ver más</button>
+          <div class="descripcion">Perfecta para entrenar, ligera y fresca.</div>
         </div>
       </div>
     </section>
 
+    <!-- Jeans -->
     <section>
       <h2>Jeans</h2>
       <div class="productos-grid">
         <div class="producto">
           <img src="imagenes/jeans.jpg" alt="Jeans ajustados">
           <p>Jeans ajustados azul oscuro - $35</p>
-          <button>Ver más</button>
+          <button onclick="verMas(this)">Ver más</button>
+          <div class="descripcion">Diseño moderno, excelente para cualquier ocasión.</div>
         </div>
+
         <div class="producto">
           <img src="imagenes/jeans-rotos.jpg" alt="Jeans rotos">
           <p>Jeans rotos modernos - $40</p>
-          <button>Ver más</button>
+          <button onclick="verMas(this)">Ver más</button>
+          <div class="descripcion">Estilo urbano con toques desgastados.</div>
         </div>
+
         <div class="producto">
           <img src="imagenes/Bagy Jeans.webp" alt="Jeans Baggy">
-          <p>Jeans Buggy  - $25</p>
-          <button>Ver más</button>
+          <p>Jeans Baggy - $25</p>
+          <button onclick="verMas(this)">Ver más</button>
+          <div class="descripcion">Ajuste cómodo y relajado para un look casual.</div>
         </div>
       </div>
     </section>
 
+    <!-- Chaquetas -->
     <section>
       <h2>Chaquetas</h2>
       <div class="productos-grid">
         <div class="producto">
           <img src="imagenes/chaqueta.jpg" alt="Chaqueta impermeable">
           <p>Chaqueta impermeable ligera - $50</p>
-          <button>Ver más</button>
+          <button onclick="verMas(this)">Ver más</button>
+          <div class="descripcion">Ideal para climas lluviosos, resistente al agua.</div>
         </div>
+
         <div class="producto">
           <img src="imagenes/chaqueta-cuero.jpg" alt="Chaqueta de cuero">
           <p>Chaqueta de cuero auténtico - $80</p>
-          <button>Ver más</button>
+          <button onclick="verMas(this)">Ver más</button>
+          <div class="descripcion">Estilo clásico con cuero genuino de alta calidad.</div>
         </div>
       </div>
     </section>
 
+    <!-- Vestidos -->
     <section>
       <h2>Vestidos</h2>
       <div class="productos-grid">
         <div class="producto">
           <img src="imagenes/vestido.jpg" alt="Vestido floral">
           <p>Vestido floral primavera - $42</p>
-          <button>Ver más</button>
+          <button onclick="verMas(this)">Ver más</button>
+          <div class="descripcion">Diseño fresco y colorido para temporada primavera-verano.</div>
         </div>
+
         <div class="producto">
           <img src="imagenes/vestido-fiesta.jpg" alt="Vestido de fiesta">
           <p>Vestido elegante para fiesta - $60</p>
-          <button>Ver más</button>
+          <button onclick="verMas(this)">Ver más</button>
+          <div class="descripcion">Elegante y sofisticado, ideal para eventos formales.</div>
         </div>
       </div>
     </section>
 
-
+    <!-- Camiseta Overzide -->
     <section>
       <h2>Camiseta Overzide</h2>
       <div class="productos-grid">
         <div class="producto">
-          <img src="imagenes/1628003-483-725.webp" alt=" Camiseta Overzide ">
-          <p> Camiseta Overzide  Gris - $15</p>
-          <button>Ver más</button>
+          <img src="imagenes/1628003-483-725.webp" alt="Camiseta Overzide">
+          <p>Camiseta Overzide Gris - $15</p>
+          <button onclick="verMas(this)">Ver más</button>
+          <div class="descripcion">Ajuste holgado, cómoda y con estilo urbano.</div>
         </div>
+
         <div class="producto">
-          <img src="imagenes/Camiseta.azul.webp" alt="Camiseta Overzide">
-          <p>Camiseta overzide Magenta - $15</p>
-          <button>Ver más</button>
+          <img src="imagenes/camiseta.jpg" alt="Camiseta básica">
+          <p>Camiseta básica de algodón - $20</p>
+          <button onclick="verMas(this)">Ver más</button>
+          <div class="descripcion">Versátil y perfecta para uso diario.</div>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer>
     <p>© 2025 Tienda de Ropa - Todos los derechos reservados</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
